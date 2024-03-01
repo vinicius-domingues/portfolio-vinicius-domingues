@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+
+@font-face {
+    font-family: Trebuchet;
+    src: url(C:/Windows/Fonts/trebucbd.ttf);
+}
+
+header::before{
+    content:"";
+    position: absolute;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    margin: 0px;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+h1 {
+    font-family: Trebuchet, sans-serif;
+    color: #DDDDDD;
+    font-size: 62px;
+}
+
+h2 {
+    font-family: 'Miriam Libre', serif;
+    color: #326898;
+    font-size: 30px;
+}
+
+p {
+    color: white;
+}
