@@ -5,11 +5,6 @@
     src: url(C:/Windows/Fonts/trebucbd.ttf);
 }
 
-body{
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
 header{
     height: 100vh;
     width: 100vw;
@@ -18,7 +13,7 @@ header{
 
 #secao-apresentacao{
     height: 100vh;
-    background-color: red;
+    background-color: whitesmoke;
     display: flex; /*Itens colocados não serão colocados abaixo e sim se sobrar espaço, ao lado*/
     align-items: center;
     gap: 5rem; /*Distancia todos os itens no valor informado*/
@@ -30,7 +25,7 @@ header{
 }
 
 #secao-apresentacao div h2{
-    color: #A6C7FF;
+    color: #00173f;
     font-family: Trebuchet;
     /*16px = 1rem*/
     font-size: 2.5rem; /*4.3rem*/
@@ -39,7 +34,7 @@ header{
     /*Selecionar > Shift + tecla pra vaixo > Duplica igual o que está selecionado */
 
 #secao-apresentacao div p{
-    color: #F4F4F4;
+    color: #326898;
     font-family: 'Miriam Libre', serif;
     font-size: 1.5rem; /*3.1rem*/
 }
@@ -74,3 +69,52 @@ p {
     color: white;
 }
 
+#secao-projetos{
+    height: 100vh;
+    background-color: #00173f;
+}
+
+#secao-projetos ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    top: 100px;
+    position: relative;
+    padding: 0px;
+}
+
+.card{
+    max-height: 454px;
+    max-width: 300px;
+    position: relative;
+    cursor: pointer;
+    border: 1.75px solid #DDDDDD;
+    border-radius: 20px;
+}
+
+.card .image {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card .texto {
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card:hover .texto {
+    opacity: 1;
+}
+
+li {
+    list-style: none;
+}
